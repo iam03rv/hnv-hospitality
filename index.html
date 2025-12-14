@@ -77,27 +77,15 @@
       <div class="hero-card">
         <h1>HNV Hospitality</h1>
         <p class="lead">HNV Hospitality is a hotel business providing comfortable, clean, and affordable stay facilities for guests.</p>
-        <div class="info">
-          <div>
-            <div class="muted">Check-in</div>
-            <strong>2:00 PM</strong>
-          </div>
-          <div>
-            <div class="muted">Check-out</div>
-            <strong>12:00 PM</strong>
-          </div>
-          <div>
-            <div class="muted">Rooms</div>
-            <strong>20+</strong>
-          </div>
-        </div>
         <div class="cta">
           <a class="btn btn-primary" href="mailto:info@hnvhospitality.com">Book Now</a>
           <a class="btn btn-outline" href="#rooms">View Rooms</a>
         </div>
       </div>
 
-      <aside class="rounded" style="background-image:url('assets/hero.jpg');background-size:cover;background-position:center;height:320px"></aside>
+      <aside class="rounded">
+        <img src="assets/hero.jpg" alt="Hotel Image" style="width:100%;height:320px;object-fit:cover;border-radius:10px">
+      </aside>
     </section>
 
     <section id="about" style="margin-top:28px">
@@ -155,14 +143,40 @@
       </div>
     </section>
 
+    <section id="gallery" style="margin-top:26px">
+      <h2>Hotel Gallery</h2>
+      <div class="gallery">
+        <img src="assets/gallery1.jpg" alt="Hotel room">
+        <img src="assets/gallery2.jpg" alt="Hotel interior">
+        <img src="assets/gallery3.jpg" alt="Hotel lobby">
+        <img src="assets/gallery4.jpg" alt="Hotel stay">
+        <img src="assets/gallery5.jpg" alt="Hotel service">
+        <img src="assets/gallery6.jpg" alt="Hotel view">
+      </div>
+    </section>
+
     <section id="contact" style="margin-top:26px">
       <h2>Contact Details</h2>
-      <div class="hero-card">
-        <p><strong>Company Name:</strong> HNV Hospitality</p>
-        <p><strong>Business Type:</strong> Hotel / Hospitality</p>
-        <p><strong>Phone:</strong> +91 98765 43210</p>
-        <p><strong>Email:</strong> info@hnvhospitality.com</p>
-        <p><strong>Address:</strong> Your Hotel Address, City, State</p>
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:20px">
+        <div class="hero-card">
+          <p><strong>Company Name:</strong> HNV Hospitality</p>
+          <p><strong>Business Type:</strong> Hotel / Hospitality</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Email:</strong> info@hnvhospitality.com</p>
+          <p><strong>Address:</strong> Your Hotel Address, City, State</p>
+        </div>
+
+        <div class="hero-card">
+          <h3>Send us a message</h3>
+          <form action="mailto:officialrajatvashney.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+          <p class="muted" style="margin-top:8px;font-size:13px">This will open your email app to send the message directly.</p>
+        </div>
       </div>
     </section>
 
